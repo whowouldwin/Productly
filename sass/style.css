@@ -1,3 +1,7 @@
+.logo-path {
+  transition: all 0.3s ease-out;
+}
+
 /*font-family: 'Open Sans', sans-serif;*/
 /*font-family: 'Poppins', sans-serif;*/
 html {
@@ -84,6 +88,10 @@ h5 {
 .button_colored:hover {
   background-color: #FF7549;
   border-color: #FF7549;
+}
+
+.logo-svg:hover .logo-path {
+  fill: #FF9900;
 }
 
 .wrapper {
