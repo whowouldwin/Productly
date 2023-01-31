@@ -475,6 +475,29 @@ h5 {
   height: 17px;
 }
 
+.tags {
+  display: flex;
+}
+.tags > * {
+  margin-right: 7px;
+}
+
+.tag {
+  padding: 0 14px;
+  border-radius: 90px;
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.tag_selected {
+  background-color: #FF9900;
+  color: #FFFFFF;
+}
+.tag_bordered {
+  border: 1px solid #D7D7D7;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
@@ -603,6 +626,22 @@ h5 {
 
 .tools__button {
   margin-top: 60px;
+}
+
+.strategies {
+  padding: 30px 0;
+}
+
+.strategies__title {
+  margin: 0 0 14px;
+}
+
+.strategies__description {
+  margin: 0 0 24px;
+}
+
+.strategies__tags {
+  margin-bottom: 31px;
 }
 
 /*# sourceMappingURL=style.css.map */
