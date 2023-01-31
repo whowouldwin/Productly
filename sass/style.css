@@ -319,6 +319,10 @@ section, main, footer, header, article {
   transition: all 0.3s ease-out;
 }
 
+h1 {
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
 /*font-family: 'Open Sans', sans-serif;*/
 /*font-family: 'Poppins', sans-serif;*/
 html {
@@ -331,43 +335,38 @@ body {
 }
 
 h1 {
-  font-family: "Poppins", Verdana, sans-serif;
+  font-size: 4.4rem;
+  line-height: 5.4rem;
+  font-weight: bold;
   font-style: normal;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 54px;
 }
 
 h2 {
-  font-family: "Poppins", Verdana, sans-serif;
+  font-size: 3.4rem;
+  line-height: 4.6rem;
+  font-weight: bold;
   font-style: normal;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 46px;
 }
 
 h3 {
-  font-family: "Poppins", Verdana, sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  font-weight: bold;
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 34px;
 }
 
 h4 {
-  font-family: "Poppins", Verdana, sans-serif;
-  font-style: normal;
+  font-size: 2.2rem;
+  line-height: 3rem;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 30px;
+  font-style: normal;
 }
 
 h5 {
-  font-family: "Poppins", Verdana, sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
