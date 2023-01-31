@@ -407,6 +407,12 @@ h5 {
 
 .link-button {
   color: #FF9900;
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-button__text {
+  margin-left: 9px;
 }
 
 .logo-svg:hover .logo-path {
