@@ -1,7 +1,18 @@
-@mixin font ($size, $height: $size, $weight: bold, $style: normal) {
+@mixin font($size, $height: $size, $weight: bold, $style: normal) {
   font-size: $size;
   line-height: $height;
   font-weight: $weight;
   font-style: $style;
 }
 
+@mixin columns($width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  //All direct descendants of the parent element
+  >* {
+    flex-basis: $width;
+  }
+
+}
