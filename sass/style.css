@@ -319,7 +319,11 @@ section, main, footer, header, article {
   transition: all 0.3s ease-out;
 }
 
-.promo__text, h1 {
+.button, body {
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+.promo__text, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -331,7 +335,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", Verdana, sans-serif;
+  line-height: 2.6rem;
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1 {
@@ -371,7 +377,6 @@ h5 {
 
 /*# sourceMappingURL=style.css.map */
 .button {
-  font-family: "Open Sans", Verdana, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
@@ -400,8 +405,23 @@ h5 {
   border-color: #FF7549;
 }
 
+.link-button {
+  color: #FF9900;
+}
+
 .logo-svg:hover .logo-path {
   fill: #FF9900;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico_play {
+  background-image: url("../images/icons/play.svg");
+  width: 18px;
+  height: 19px;
 }
 
 .wrapper {

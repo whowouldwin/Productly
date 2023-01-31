@@ -1,5 +1,5 @@
 .button {
-  font-family: 'Open Sans', Verdana, sans-serif;
+  @extend %font-prim;
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
@@ -26,4 +26,9 @@
       border-color: $color-additional;
     }
   }
+}
+.link-button {
+  color: $color-primary;
+  @extend %font-add;
+
 }
