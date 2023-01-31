@@ -577,11 +577,32 @@ h5 {
   color: #FF9900;
 }
 
+.tools__wrapper {
+  padding-bottom: 90px;
+  background-image: url("../images/tools/Bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
 .tools__title {
   max-width: 462px;
   margin: auto;
   text-align: center;
   margin-bottom: 70px;
+}
+
+.tool__icon {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tool__title {
+  margin: 0 0 26px;
+}
+
+.tools__button {
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
