@@ -5,8 +5,52 @@
 .ico_play {
   background-image: url("../images/icons/play.svg");
 
+  //compatible for EE, link with svg file
   width: 18px;
   height: 19px;
-
-
 }
+.icon-squire {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  align-items: center;
+  justify-content: center;
+  &_yellow {
+    background-color: $color-yellow;
+  }
+  &_lilium {
+    background-color: $color-violet;
+  }
+  &_red {
+    background-color: $color-red;
+  }
+  &_blue {
+    background-color: $color-blue;
+  }
+}
+.ico-arrow {
+  background-image: url("../images/icons/cursor.svg");
+  //compatible for EE, link with svg file
+  width: 12px;
+  height: 17px;
+}
+.ico-snake {
+  background-image: url("../images/icons/curve.svg");
+  //compatible for EE, link with svg file
+  width: 18px;
+  height: 14px;
+}
+.ico-heart {
+  background-image: url("../images/icons/heart.svg");
+  //compatible for EE, link with svg file
+  width: 17px;
+  height: 15px;
+}
+.ico-clock {
+  background-image: url("../images/icons/clock.svg");
+  //compatible for EE, link with svg file
+  width: 15px;
+  height: 17px;
+}
+

@@ -430,6 +430,51 @@ h5 {
   height: 19px;
 }
 
+.icon-squire {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.icon-squire_yellow {
+  background-color: #FAB005;
+}
+.icon-squire_lilium {
+  background-color: #7752BE;
+}
+.icon-squire_red {
+  background-color: #F03E3D;
+}
+.icon-squire_blue {
+  background-color: #4DADF7;
+}
+
+.ico-arrow {
+  background-image: url("../images/icons/cursor.svg");
+  width: 12px;
+  height: 17px;
+}
+
+.ico-snake {
+  background-image: url("../images/icons/curve.svg");
+  width: 18px;
+  height: 14px;
+}
+
+.ico-heart {
+  background-image: url("../images/icons/heart.svg");
+  width: 17px;
+  height: 15px;
+}
+
+.ico-clock {
+  background-image: url("../images/icons/clock.svg");
+  width: 15px;
+  height: 17px;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
