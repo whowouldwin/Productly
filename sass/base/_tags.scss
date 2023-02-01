@@ -15,4 +15,7 @@
   &_bordered{
     border: 1px solid $color-boarder;
   }
+  &_colored {
+    background-color: $color-tag;
+  }
 }
