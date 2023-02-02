@@ -755,4 +755,8 @@ h5 {
   margin: 0 0 29px;
 }
 
+.footer__wrapper {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
