@@ -480,6 +480,54 @@ h5 {
   height: 17px;
 }
 
+.ico-phone {
+  background-image: url("../images/contact-us/tel.svg");
+  width: 13px;
+  height: 13px;
+}
+
+.ico-mail {
+  background-image: url("../images/contact-us/mail.svg");
+  width: 11px;
+  height: 8px;
+}
+
+.icon-round {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-round_white {
+  background-color: #FFFFFF;
+}
+
+.icon-round {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-round_white {
+  background-color: #FFFFFF;
+}
+
+.ico_phone {
+  background-image: url("../images/contact-us/tel.svg");
+  width: 13px;
+  height: 13px;
+}
+
+.ico_mail {
+  background-image: url("../images/contact-us/mail.svg");
+  width: 11px;
+  height: 8px;
+}
+
 .tags {
   display: flex;
 }
@@ -585,6 +633,24 @@ h5 {
 
 .contact-us__button > * {
   min-width: 117px;
+}
+
+.contact-us__link {
+  margin: 0 0 19px;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+  font-weight: normal;
+  font-style: normal;
+}
+.contact-us__link a {
+  margin-left: 11px;
+  color: #544837;
+  text-decoration: none;
+}
+.contact-us__link:hover a {
+  text-decoration: underline;
 }
 
 .promo__wrapper {
