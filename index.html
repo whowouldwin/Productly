@@ -199,12 +199,12 @@
         </div>
     </div>
 </section>
-<section class="contuct-us">
+<section class="contact-us">
     <div class="wrapper">
-        <h2>Contact Us</h2>
-        <div class="layout-2-column">
+        <h2 class="contact-us__title">Contact Us</h2>
+        <div class="layout-2-column contact-us-container">
             <div class="contact-us__content">
-                <p>Your About Us page is vital. It’s often the first stop in any user’s journey through a website or
+                <p class="contact-us__text">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or
                     blog. It also shouldn’t be their last, because first impressions count online just as much as they
                     do in the real world. If your visitors aren’t impressed, you can expect them to leave without
                     reading your awesome content or completing a conversion action (e.g., signing up for your
@@ -235,11 +235,15 @@
     </div>
 </section>
 <footer class="footer">
-    <div class="wrapper footer__wrapper"></div>
-    <a href="#" class="logo">Logo</a>
+    <div class="wrapper footer__wrapper">
+        <a href="#" class="logo">
+            <object data="./images/Logo.svg" type="image/svg+xml" class="logo-object">
+                Your browser does not support svg
+            </object>
+        </a>
         <div class="footer-navigation layout-3-column">
             <div class="footer-navigation__column">
-                <h4>Quick Links</h4>
+                <h4 class="footer-navigation__title">Quick Links</h4>
                 <ul class="footer-navigation__links">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Blog</a></li>
@@ -248,7 +252,7 @@
                 </ul>
             </div>
             <div class="footer-navigation__column">
-                <h4>Legal Stuff</h4>
+                <h4 class="footer-navigation__title">Legal Stuff</h4>
                 <ul class="footer-navigation__links">
                     <li><a href="#">Disclaimer</a></li>
                     <li><a href="#">Financing</a></li>
@@ -257,7 +261,7 @@
                 </ul>
             </div>
             <div class="footer-navigation__column">
-                <h4>Quick Links</h4>
+                <h4 class="footer-navigation__title">Quick Links</h4>
                 <ul class="footer-navigation__links">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Blog</a></li>
@@ -266,6 +270,7 @@
                 </ul>
             </div>
         </div>
+    </div>
 </footer>
 
 </body>
