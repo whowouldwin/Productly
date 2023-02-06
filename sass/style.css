@@ -420,6 +420,17 @@ h5 {
   margin-left: 9px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 414px) {
+  .logo-object {
+    width: 160px;
+  }
+}
+
 .logo-svg:hover .logo-path {
   fill: #FF9900;
 }
@@ -569,6 +580,7 @@ h5 {
   position: relative;
   width: 31px;
   height: 25px;
+  margin-right: 37px;
 }
 @media (max-width: 768px) {
   .hamburger {
@@ -609,9 +621,24 @@ h5 {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding-left: 24px;
+  }
+}
+
+.header__logo-line {
+  display: flex;
+  align-items: center;
+}
 
 .header__buttons > .button {
   margin-left: 14px;
+}
+@media (max-width: 414px) {
+  .header__buttons > .button {
+    display: none;
+  }
 }
 
 .header__buttons > .button:first-child {
@@ -769,6 +796,12 @@ h5 {
 }
 .navigation__link:hover {
   color: #FF9900;
+}
+
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .tools__wrapper {
