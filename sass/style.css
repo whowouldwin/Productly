@@ -558,6 +558,11 @@ h5 {
   max-width: 1197px;
   margin: auto;
 }
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 46px;
+  }
+}
 
 .header {
   background: #FFFFFF;
