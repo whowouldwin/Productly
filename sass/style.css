@@ -554,6 +554,40 @@ h5 {
   background-color: #F5F5F5;
 }
 
+.hamburger__line, .hamburger::after, .hamburger::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #173A56;
+  border-radius: 5px;
+  height: 3px;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 31px;
+  height: 25px;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+.hamburger::before {
+  top: 0;
+  left: 0;
+}
+.hamburger::after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1.5px);
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
