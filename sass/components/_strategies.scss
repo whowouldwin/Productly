@@ -23,6 +23,9 @@
       width: 48%;
       flex-basis: 48%;
     }
+    @include media-mobile {
+      flex-basis: 100%;
+    }
   }
 }
 .strategy__content {

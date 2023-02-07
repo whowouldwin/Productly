@@ -361,6 +361,14 @@ h2 {
   font-weight: bold;
   font-style: normal;
 }
+@media (max-width: 414px) {
+  h2 {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
 
 h3 {
   font-size: 2.4rem;
@@ -937,6 +945,11 @@ h5 {
   .strategy-wrapper > * {
     width: 48%;
     flex-basis: 48%;
+  }
+}
+@media (max-width: 414px) {
+  .strategy-wrapper > * {
+    flex-basis: 100%;
   }
 }
 
