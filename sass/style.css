@@ -931,6 +931,11 @@ h5 {
   margin-top: 60px;
   text-align: center;
 }
+@media (max-width: 414px) {
+  .tools__button {
+    margin-top: 0;
+  }
+}
 
 .strategies {
   padding: 30px 0;
