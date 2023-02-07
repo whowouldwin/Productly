@@ -5,6 +5,23 @@
   background-position: center bottom;
   background-size: 100%;
 }
+.tool-container {
+  @include media-tablet {
+    flex-wrap: wrap;
+    .tool {
+      flex-basis: 43%;
+      text-align: center;
+    }
+  }
+  @include media-mobile{
+    flex-wrap: wrap;
+    .tool {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 47px;
+    }
+  }
+}
 .tools__title{
   max-width: 462px;
   margin: auto;
