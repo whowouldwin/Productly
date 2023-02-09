@@ -43,6 +43,11 @@
 .strategy {
   cursor: pointer;
   display: flex;
+  position: relative;
+  flex-direction: column;
+  &_hidden {
+    display: none;
+  }
   @include media-tablet {
     overflow: hidden;
   }

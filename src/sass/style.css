@@ -1072,6 +1072,11 @@ h5 {
 .strategy {
   cursor: pointer;
   display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.strategy_hidden {
+  display: none;
 }
 @media (max-width: 768px) {
   .strategy {
