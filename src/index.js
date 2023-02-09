@@ -30,6 +30,9 @@ const data = [
 
 window.onload = function () {
     //tags
+    if (data) {
+        renderArticlesToDom()
+    }
     addTagsClickHandler();
 
 }
@@ -78,4 +81,12 @@ const filterStrategyBySelectedTag = (selectedTag) => {
         )
     })
 };
+const renderArticlesToDom = () => {
+  let strategiesWrapper = getStrategiesWrapper();
+}
+const getStrategiesWrapper = () => {
+  const strategiesContainer = document.querySelector('.strategy-wrapper');
+  strategiesContainer.innerHTML = '';
+  return strategiesContainer;
+}
 
