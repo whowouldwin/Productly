@@ -507,7 +507,7 @@ h5 {
 }
 
 .ico-arrow {
-  background-image: url("../../../images/icons/cursor.svg");
+  background-image: url("../../images/icons/cursor.svg");
   width: 12px;
   height: 17px;
 }
@@ -706,6 +706,11 @@ h5 {
 }
 .layout-3-column > * {
   flex-basis: 30%;
+}
+.layout-3-column:after {
+  content: "";
+  width: 30%;
+  display: block;
 }
 
 .layout-2-column {
