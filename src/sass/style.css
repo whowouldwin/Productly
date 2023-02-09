@@ -363,8 +363,8 @@ h2 {
 }
 @media (max-width: 414px) {
   h2 {
-    font-size: 2.1rem;
-    line-height: 3.1rem;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
     font-weight: bold;
     font-style: normal;
   }
@@ -376,12 +376,28 @@ h3 {
   font-weight: bold;
   font-style: normal;
 }
+@media (max-width: 414px) {
+  h3 {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
 
 h4 {
   font-size: 2.2rem;
   line-height: 3rem;
   font-weight: 600;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    font-style: normal;
+  }
 }
 
 h5 {
@@ -464,7 +480,7 @@ h5 {
 }
 
 .ico_play {
-  background-image: url("../images/icons/play.svg");
+  background-image: url("../../images/icons/play.svg");
   width: 18px;
   height: 19px;
 }
@@ -491,37 +507,37 @@ h5 {
 }
 
 .ico-arrow {
-  background-image: url("../images/icons/cursor.svg");
+  background-image: url("../../images/icons/cursor.svg");
   width: 12px;
   height: 17px;
 }
 
 .ico-snake {
-  background-image: url("../images/icons/curve.svg");
+  background-image: url("../../images/icons/curve.svg");
   width: 18px;
   height: 14px;
 }
 
 .ico-heart {
-  background-image: url("../images/icons/heart.svg");
+  background-image: url("../../images/icons/heart.svg");
   width: 17px;
   height: 15px;
 }
 
 .ico-clock {
-  background-image: url("../images/icons/clock.svg");
+  background-image: url("../../images/icons/clock.svg");
   width: 15px;
   height: 17px;
 }
 
 .ico-phone {
-  background-image: url("../images/contact-us/tel.svg");
+  background-image: url("../../images/contact-us/tel.svg");
   width: 13px;
   height: 13px;
 }
 
 .ico-mail {
-  background-image: url("../images/contact-us/mail.svg");
+  background-image: url("../../images/contact-us/mail.svg");
   width: 11px;
   height: 8px;
 }
@@ -551,13 +567,13 @@ h5 {
 }
 
 .ico_phone {
-  background-image: url("../images/contact-us/tel.svg");
+  background-image: url("../../images/contact-us/tel.svg");
   width: 13px;
   height: 13px;
 }
 
 .ico_mail {
-  background-image: url("../images/contact-us/mail.svg");
+  background-image: url("../../images/contact-us/mail.svg");
   width: 11px;
   height: 8px;
 }
@@ -703,14 +719,35 @@ h5 {
 .footer {
   padding: 60px 0 70px;
 }
+@media (max-width: 414px) {
+  .footer {
+    padding: 31px 0;
+  }
+}
 
 .footer__wrapper {
   display: flex;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation {
   flex-grow: 1;
   padding-left: 152px;
+}
+@media (max-width: 768px) {
+  .footer-navigation {
+    padding-left: 0;
+    margin-top: 34px;
+  }
+}
+@media (max-width: 414px) {
+  .footer-navigation {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation__title {
@@ -926,7 +963,7 @@ h5 {
 
 .tools__wrapper {
   padding-bottom: 90px;
-  background-image: url("../images/tools/Bg.png");
+  background-image: url("../../images/tools/Bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
