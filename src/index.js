@@ -30,7 +30,11 @@ const selectClickedTag = (clickedTag) => {
     clickedTag.classList.remove('tag_bordered');
 };
 const showAllStrategies = () => {
+    let strategies = document.querySelectorAll('.strategy-wrapper .strategy');
+    strategies.forEach(strategy => {
+        strategy.classList.remove('strategy_hidden');
 
+    })
 };
 const filterStrategyBySelectedTag = (selectedTag) => {
     let strategies = document.querySelectorAll('.strategy-wrapper .strategy');
