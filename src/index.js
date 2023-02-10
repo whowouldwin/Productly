@@ -1,4 +1,18 @@
-import {Article} from "../js/Article";
+
+import fs from "fs";
+import jsdom from "jsdom";
+const { JSDOM } = jsdom;
+
+import { Article } from "../js/Article.js";
+
+const filePath = "../index.html";
+const html = fs.readFileSync(filePath, "utf-8");
+const dom = new JSDOM(html);
+global.window = dom.window;
+global.document = dom.window.document;
+
+
+
 
 const data = [
     {
