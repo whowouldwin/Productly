@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "style": "sass --watch src/sass/style.scss src/sass/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "webpack --mode=development --devtool='inline-source-map' --watch"
   },
   "repository": {
     "type": "git",
