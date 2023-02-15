@@ -25,6 +25,9 @@ export class Modal {
         this.setContent(content);
         this.appendModalElements();
 
+        //Bind events
+        this.bindEvents();
+
 
         //Open modal
         this.openModal();
@@ -49,8 +52,20 @@ export class Modal {
         this.overlay.append(this.modal);
     }
 
+    bindEvents() {
+        this.modalCloseBtn.addEventListener('click', this.closeModal);
+        this.overlay.addEventListener('click', this.closeModal);
+    }
+
     openModal() {
         console.log('Test openModal');
         document.body.append(this.overlay);
+    }
+    closeModal() {
+        const overlay = document.querySelector('.overlay');
+        if (overlay) {
+            overlay.parentNode.removeChild(overlay);
+        }
+
     }
 }
