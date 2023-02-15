@@ -4,6 +4,7 @@
 // const { JSDOM } = jsdom;
 
 import { Article } from "../js/Article.js";
+import { Modal } from "../js/Modal.js";
 
 // const filePath = "../index.html";
 // const html = fs.readFileSync(filePath, "utf-8");
@@ -43,11 +44,17 @@ const data = [
 
 
 window.onload = function () {
-    //tags
+    //Render articles
     if (data) {
         renderArticlesToDom()
     }
+
+    //Tags
     addTagsClickHandler();
+
+    //generate base modal from modal class
+    addToolsClickHandler();
+
 
 }
 const addTagsClickHandler = () => {
@@ -113,4 +120,19 @@ const generateArticles = (data) => {
       articles.push(new Article(article))
   });
   return articles;
+}
+
+const addToolsClickHandler = () => {
+    debugger;
+  document.querySelector('.tools__button .button').addEventListener('click', () => {
+    generateToolsModal();
+  })
+}
+
+const generateToolsModal = () => {
+    renderModalWindow('Test');
+}
+const renderModalWindow = (content) => {
+  let modal = new Modal('tools-modal');
+  modal.buildModal(content);
 }
