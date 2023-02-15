@@ -5,6 +5,7 @@
 
 import { Article } from "../js/Article.js";
 import { Modal } from "../js/Modal.js";
+import { ArticleModal } from "../js/ArticleModal.js";
 
 // const filePath = "../index.html";
 // const html = fs.readFileSync(filePath, "utf-8");
@@ -107,6 +108,7 @@ const renderArticlesToDom = () => {
   generateArticles(data).forEach(article => {
           strategiesWrapper.append(article.generateArticle());
       });
+  addStrategyClickHandler();
 }
 const getStrategiesWrapper = () => {
   const strategiesContainer = document.querySelector('.strategy-wrapper');
@@ -134,4 +136,13 @@ const generateToolsModal = () => {
 const renderModalWindow = (content) => {
   let modal = new Modal('tools-modal');
   modal.buildModal(content);
+}
+
+const addStrategyClickHandler = () => {
+  document.querySelector('.strategy-wrapper').addEventListener('click', (e) => {
+      if (e.target.closest('.strategy')) {
+        let clickedStrategyId = e.target.closest('.strategy').getAttribute('data-id');
+        console.log(clickedStrategyId);
+      }
+  })
 }
