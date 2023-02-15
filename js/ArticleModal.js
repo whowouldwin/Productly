@@ -1,4 +1,4 @@
-import { Modal} from "./Modal.js";
+import { Modal } from './Modal';
 
 export class  ArticleModal extends Modal {
     constructor(classes, {id, title, urlToImage, tags, content, date }) {
@@ -10,6 +10,7 @@ export class  ArticleModal extends Modal {
         this.content = content;
         this.date = date;
     }
+
     //Article modal generator
     generateContent() {
         let template = '';
@@ -38,7 +39,7 @@ export class  ArticleModal extends Modal {
             template += `</div>`
         }
         article.innerHTML = template;
-        return content;
+        return article;
     }
     renderModal() {
         let content = this.generateContent();

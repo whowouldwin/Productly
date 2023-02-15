@@ -5,7 +5,8 @@
 
 import { Article } from "../js/Article.js";
 import { Modal } from "../js/Modal.js";
-import { ArticleModal } from "../js/ArticleModal.js";
+import  { ArticleModal } from "../js/ArticleModal.js";
+
 
 // const filePath = "../index.html";
 // const html = fs.readFileSync(filePath, "utf-8");
