@@ -9,10 +9,10 @@ export class Modal {
 
     buildModal(content) {
         //Overlay
-        this.overlay = this.createDomNode(this.overlay, 'div', 'overlay_modal');
+        this.overlay = this.createDomNode(this.overlay, 'div','overlay', 'overlay_modal');
 
         //Modal
-        this.modal = this.createDomNode(this.modal, 'div', this.classes );
+        this.modal = this.createDomNode(this.modal, 'div','modal', this.classes);
 
         //Modal content
         this.modalContent = this.createDomNode(this.modalContent,'div', 'modal__content')
