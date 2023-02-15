@@ -61,10 +61,10 @@ export class Modal {
         console.log('Test openModal');
         document.body.append(this.overlay);
     }
-    closeModal() {
-        const overlay = document.querySelector('.overlay');
-        if (overlay) {
-            overlay.parentNode.removeChild(overlay);
+    closeModal(e) {
+        let classes = e.target.classList;
+        if (classes.contains('overlay') || classes.contains('modal__close-icon')) {
+            document.querySelector('.overlay').remove();
         }
 
     }
