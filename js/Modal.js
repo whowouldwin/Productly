@@ -25,8 +25,9 @@ export class Modal {
         this.setContent(content);
         this.appendModalElements();
 
-        console.log(this.modal);
 
+        //Open modal
+        this.openModal();
     }
 
     createDomNode(node, element, ...classes) {
@@ -46,5 +47,10 @@ export class Modal {
         this.modal.append(this.modalCloseBtn);
         this.modal.append(this.modalContent);
         this.overlay.append(this.modal);
+    }
+
+    openModal() {
+        console.log('Test openModal');
+        document.body.append(this.overlay);
     }
 }

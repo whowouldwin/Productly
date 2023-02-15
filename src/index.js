@@ -123,7 +123,6 @@ const generateArticles = (data) => {
 }
 
 const addToolsClickHandler = () => {
-    debugger;
   document.querySelector('.tools__button .button').addEventListener('click', () => {
     generateToolsModal();
   })
