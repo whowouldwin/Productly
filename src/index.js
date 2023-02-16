@@ -104,6 +104,7 @@ const filterStrategyBySelectedTag = (selectedTag) => {
             })
     })
 };
+
 const renderArticlesToDom = () => {
   let strategiesWrapper = getStrategiesWrapper();
   generateArticles(data).forEach(article => {

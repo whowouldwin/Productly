@@ -1,4 +1,4 @@
-import { Modal } from './Modal';
+import { Modal } from './Modal.js';
 
 export class  ArticleModal extends Modal {
     constructor(classes, {id, title, urlToImage, tags, content, date }) {
