@@ -145,6 +145,16 @@ const addStrategyClickHandler = () => {
       if (e.target.closest('.strategy')) {
         let clickedStrategyId = e.target.closest('.strategy').getAttribute('data-id');
         console.log(clickedStrategyId);
+        let clickedStrategyData = getClickedData(clickedStrategyId);
+        renderArticleModalWindow(clickedStrategyData);
       }
   })
 }
+const getClickedData = (id) => {
+  return data.find( article => article.id = id);
+}
+const renderArticleModalWindow = (article) => {
+    let modal = new ArticleModal('article-modal', article);
+    modal.renderModal();
+}
+
