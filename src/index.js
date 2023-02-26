@@ -157,4 +157,5 @@ const renderArticleModalWindow = (article) => {
     let modal = new ArticleModal('article-modal', article);
     modal.renderModal();
 }
+//test git
 
