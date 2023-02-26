@@ -1137,6 +1137,28 @@ h5 {
   }
 }
 
+.article-modal__content .strategy__image {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .article-modal__content .strategy__image {
+    position: static;
+  }
+}
+.article-modal__content .strategy__date {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0 5px;
+}
+.article-modal__content .strategy__name {
+  margin-bottom: 10px;
+}
+.article-modal__content .strategy__text {
+  margin: 0 0 12px;
+}
+
 .employee {
   display: flex;
   padding: 35px;

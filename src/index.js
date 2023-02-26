@@ -151,7 +151,7 @@ const addStrategyClickHandler = () => {
   })
 }
 const getClickedData = (id) => {
-  return data.find( article => article.id = id);
+  return data.find( article => article.id == id);
 }
 const renderArticleModalWindow = (article) => {
     let modal = new ArticleModal('article-modal', article);
