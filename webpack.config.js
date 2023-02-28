@@ -1,0 +1,30 @@
+const webpack = require('webpack');
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+module.exports = (env, options)=> {
+    const isProduction = options.mode === 'production';
+
+    const config = {
+        // ...
+        mode: isProduction ? 'production' : 'development',
+        devtool: isProduction ? false : 'source-map',
+        watch: !isProduction,
+        entry: './src/index.js',
+        output: {
+            path: path.join(__dirname, '/dist'),
+            filename: 'script.js'
+        },
+        plugins: [
+            new CleanWebpackPlugin(),
+        ]
+    }
+
+    // if (isDevelopment) {
+    //     // customize configuration for development environment
+    // } else {
+    //     // customize configuration for production environment
+    // }
+
+    return config;
+};
