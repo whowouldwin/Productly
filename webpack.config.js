@@ -15,6 +15,22 @@ module.exports = (env, options)=> {
             path: path.join(__dirname, '/dist'),
             filename: 'script.js'
         },
+        module: {
+            rules: [
+                {
+                    test: /\.m?js$/,
+                    exclude: /node_modules/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: [
+                                ['@babel/preset-env', { targets: "defaults" }]
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
         plugins: [
             new CleanWebpackPlugin(),
         ]
