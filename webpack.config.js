@@ -37,16 +37,16 @@ module.exports = (env, options)=> {
                 },
                 {
                     test: /\.(png|svg|jpe?g|gif)$/,
+                    include: path.resolve(__dirname, '/images'),
                     use: [
                         {
                             loader: 'file-loader',
                             options: {
-                                name: '[name].[ext]',
-                                outputPath: 'images/',
+                                name: '[name].[hash].[ext]',
+                                outputPath: 'images',
                             },
                         }
                     ]
-
                 }
             ]
         },
