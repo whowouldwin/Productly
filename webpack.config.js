@@ -2,6 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require ('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = (env, options)=> {
     const isProduction = options.mode === 'production';
@@ -11,10 +13,10 @@ module.exports = (env, options)=> {
         mode: isProduction ? 'production' : 'development',
         devtool: isProduction ? false : 'source-map',
         watch: !isProduction,
-        entry: './src/index.js',
+        entry: ['./src/index.js','./src/sass/style.scss'],
         output: {
             path: path.join(__dirname, '/dist'),
-            filename: 'script.js'
+            filename: 'script.js',
         },
         module: {
             rules: [
@@ -31,31 +33,43 @@ module.exports = (env, options)=> {
                     }
                 },
                 {
+                    test: /\.html$/,
+                    loader: 'html-loader',
+                },
+                {
                     test: /\.scss$/,
                     use: [
                         MiniCssExtractPlugin.loader,'css-loader','sass-loader'
                     ]
                 },
                 {
-                    test: /\.(png|svg|jpe?g|gif)$/,
+                    test: /\.(png|svg|jpg|jpe?g|gif)$/,
                     include: path.resolve(__dirname, '/images'),
                     use: [
                         {
                             loader: 'file-loader',
                             options: {
-                                name: '[name].[hash].[ext]',
+                                name: '[hash].[ext]',
                                 outputPath: 'images',
+
                             },
                         }
                     ]
-                }
+                },
+
+
+
             ]
         },
         plugins: [
             new CleanWebpackPlugin(),
+            new HtmlWebpackPlugin({
+                template: 'index.html'
+            }),
             new MiniCssExtractPlugin( {
                 filename: 'style.css'
-            })
+            }),
+
         ]
     }
 

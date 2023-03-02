@@ -6,7 +6,7 @@
 import { Article } from "../js/Article.js";
 import { Modal } from "../js/Modal.js";
 import  { ArticleModal } from "../js/ArticleModal.js";
-import './sass/style.scss';
+
 
 
 // const filePath = "../index.html";
