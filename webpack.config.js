@@ -17,9 +17,11 @@ module.exports = (env, options)=> {
         output: {
             path: path.join(__dirname, '/dist'),
             filename: 'script.js',
+            // publicPath: '/'
         },
         module: {
             rules: [
+
                 {
                     test: /\.m?js$/,
                     exclude: /node_modules/,
@@ -45,13 +47,26 @@ module.exports = (env, options)=> {
                 {
                     test: /\.(png|svg|jpg|jpe?g|gif)$/,
                     include: path.resolve(__dirname, '/images'),
+                    type: 'assets/resource',
+                    generator: {
+                        filename: 'images/[name][hash][ext]',
+                    },
                     use: [
                         {
                             loader: 'file-loader',
                             options: {
+                                esModule: false,
+                                name: '[name].[ext]',
+                                outputPath: 'images/',
+
+                            },
+                            loader: 'url-loader',
+                            options: {
+                                limit: 8192, // задаем лимит для размера файлов в байтах
                                 name: '[hash].[ext]',
                                 outputPath: 'images',
-
+                                publicPath: 'images/',
+                                esModule: false,
                             },
                         }
                     ]
@@ -64,7 +79,7 @@ module.exports = (env, options)=> {
         plugins: [
             new CleanWebpackPlugin(),
             new HtmlWebpackPlugin({
-                template: 'index.html'
+                template: 'index.html',
             }),
             new MiniCssExtractPlugin( {
                 filename: 'style.css'
